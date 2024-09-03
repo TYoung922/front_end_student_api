@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "./Loader/Loader";
+import "./RecordList.scss";
 
 const Record = (props) => {
   return (
@@ -11,12 +12,17 @@ const Record = (props) => {
       <td>{props.record.age}</td>
       <td>{props.record.currentCollege}</td>
       <td>
-        <Link className="btn btn-link" to={`/edit/${props.record._id}`}>
+        <Link
+          className="btn btn-edit"
+          id="edit"
+          to={`/edit/${props.record._id}`}
+        >
           Edit
         </Link>
         |
         <button
-          className="btn btn-link"
+          className="btn btn-delete"
+          id="delete"
           onClick={() => {
             props.deleteRecord(props.record._id);
           }}
@@ -80,7 +86,7 @@ export default function RecordList() {
       <h3 className="contact-title">Contact List</h3>
       <table className="table table-stripped" style={{ marginTop: 20 }}>
         <thead>
-          <tr>
+          <tr className="tableTop">
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
@@ -94,3 +100,12 @@ export default function RecordList() {
     </div>
   );
 }
+
+/* <tr className="tableTop">
+          <td> First Name</td>
+          <td>Last Name</td>
+          <td>Email</td>
+          <td>age</td>
+          <td>Current College</td>
+          <td>Modify Student</td>
+        </tr> */

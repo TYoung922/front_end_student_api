@@ -1,0 +1,87 @@
+/* Navbar.css */
+.custom-navbar {
+  background: linear-gradient(135deg, #343a40, #212529);
+  padding: 12px 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.navbar-logo {
+  width: 36px; /* Adjusted for a sleek, smaller look */
+  height: auto;
+  margin-right: 12px;
+  border-radius: 50%; /* Rounded logo for a modern touch */
+  transition: transform 0.3s;
+}
+
+.custom-navbar .nav-link {
+  color: #dcdcdc;
+  margin: 0 12px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: #17a2b8;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #17a2b8;
+}
+
+.custom-navbar .nav-link:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background: rgba(23, 162, 184, 0.1);
+}
+
+@media (max-width: 992px) {
+  .custom-navbar .nav-link {
+    margin: 8px 0;
+  }
+}

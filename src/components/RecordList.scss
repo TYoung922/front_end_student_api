@@ -1,0 +1,59 @@
+#edit {
+  background-color: orange;
+}
+
+#delete {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#delete:hover {
+  background-color: red;
+  color: white;
+}
+
+#edit:hover {
+  background-color: yellow;
+}
+
+#tableTop {
+  background-color: #212529;
+  color: white;
+  margin: 10px;
+}
+
+#btn {
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+// tr:hover {
+//   background-color: #829cb6;
+// }
+tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff; /* White for even rows */
+}
+
+/* Header styles if needed */
+.tableTop {
+  background-color: #212529 !important; /* Example header color */
+  color: white !important;
+}
+
+table .table {
+  background-color: #212529;
+  color: white;
+}
