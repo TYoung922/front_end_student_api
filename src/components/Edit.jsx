@@ -8,6 +8,7 @@ export default function Edit() {
     email: "",
     age: "",
     currentCollege: "",
+    major: "",
     records: [],
   });
   const params = useParams();
@@ -55,6 +56,7 @@ export default function Edit() {
       email: form.email,
       age: form.age,
       currentCollege: form.currentCollege,
+      major: form.major,
     };
 
     //this will send a post request to update the data in the database.
@@ -126,6 +128,17 @@ export default function Edit() {
             id="currentCollege"
             value={form.currentCollege}
             onChange={(e) => updateForm({ currentCollege: e.target.value })}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="major">Major</label>
+          <input
+            type="text"
+            className="form-control"
+            id="major"
+            value={form.major}
+            onChange={(e) => updateForm({ major: e.target.value })}
           />
         </div>
         <br />

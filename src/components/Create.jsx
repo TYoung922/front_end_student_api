@@ -96,13 +96,24 @@ export default function Create() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="age">Currenct College</label>
+          <label htmlFor="currentCollege">Currenct College</label>
           <input
             type="text"
             className="form-control"
             id="currentCollege"
             value={form.currentCollege}
             onChange={(e) => updateForm({ currentCollege: e.target.value })}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="major">Major</label>
+          <input
+            type="text"
+            className="form-control"
+            id="major"
+            value={form.major}
+            onChange={(e) => updateForm({ major: e.target.value })}
           />
         </div>
 

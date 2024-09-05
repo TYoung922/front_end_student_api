@@ -10,8 +10,10 @@
 .btn {
   border-radius: 5px;
   padding: 5px;
-  margin-left: 8px;
-  margin-right: 8px;
+  // margin-left: 8px;
+  // margin-right: 8px;
+  // margin-top: 8px;
+  margin: 8px;
 }
 
 #delete:hover {
@@ -20,14 +22,15 @@
 }
 
 #edit:hover {
-  background-color: yellow;
+  background-color: blue;
+  color: white;
 }
 
-#tableTop {
-  background-color: #212529;
-  color: white;
-  margin: 10px;
-}
+// #tableTop {
+//   background-color: #212529;
+//   color: white;
+//   margin: 10px;
+// }
 
 #btn {
   border-radius: 5px;
@@ -36,24 +39,40 @@
   margin-right: 8px;
 }
 
-// tr:hover {
-//   background-color: #829cb6;
-// }
-tr:nth-child(odd) {
-  background-color: #f9f9f9; /* Light gray for odd rows */
-}
+.tList {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 10px; // Apply directly to the table
+  // border-collapse: separate;
+  overflow: hidden; // Prevent contents from overflowing the rounded corners
+  text-align: center;
 
-tr:nth-child(even) {
-  background-color: #ffffff; /* White for even rows */
-}
+  thead {
+    background-color: #001824;
+    color: white;
 
-/* Header styles if needed */
-.tableTop {
-  background-color: #212529 !important; /* Example header color */
-  color: white !important;
-}
+    th {
+      padding: 15px;
+      font-weight: bold;
+    }
+  }
 
-table .table {
-  background-color: #212529;
-  color: white;
+  // td {
+  //   padding-left: 15px;
+  // }
+
+  // Striped rows
+  tbody tr:nth-child(odd) {
+    background-color: #d3d3ff; // Background color for odd rows
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #e6f2ff; // Background color for even rows
+  }
+
+  // Hover styles for rows
+  tbody tr:hover {
+    background-color: yellow;
+    color: black;
+  }
 }

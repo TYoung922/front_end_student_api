@@ -1,0 +1,68 @@
+.selector {
+  text-align: center;
+}
+
+.dropDown {
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+#majorD {
+  padding-left: 35px;
+}
+
+.quoteSelect {
+  margin-top: 20px;
+}
+
+.calculate {
+  background-color: darkgreen;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  margin-top: 50px;
+}
+
+.calculate:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+.result {
+  margin-top: 50px;
+}
+
+select {
+  padding: 3px;
+  font-weight: bold;
+  border-width: 2px;
+  border-color: darkblue;
+  border-radius: 5px;
+}
+
+select:hover {
+  border-color: blue;
+}
+select:focus {
+  border-color: blue;
+}
+
+select:active {
+  background-color: darkblue;
+}
+
+.aboutInfo {
+  margin: 30px 50px;
+}
+
+.learnMore {
+  background-color: darkblue;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.learnMore:hover {
+  background-color: blue;
+}

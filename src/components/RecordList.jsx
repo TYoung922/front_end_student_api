@@ -11,6 +11,7 @@ const Record = (props) => {
       <td>{props.record.email}</td>
       <td>{props.record.age}</td>
       <td>{props.record.currentCollege}</td>
+      <td>{props.record.major}</td>
       <td>
         <Link
           className="btn btn-edit"
@@ -83,8 +84,22 @@ export default function RecordList() {
   //this following section will display the table with the records of individuals
   return (
     <div className="container">
-      <h3 className="contact-title">Contact List</h3>
-      <table className="table table-stripped" style={{ marginTop: 20 }}>
+      <h3
+        className="contact-title"
+        style={{
+          fontWeight: "bold",
+          textAlign: "center",
+          color: "darkblue",
+          padding: "15px",
+        }}
+      >
+        Contact List
+      </h3>
+      <table
+        className="tList"
+        // className="table table-stripped"
+        // style={{ marginTop: 20 }}
+      >
         <thead>
           <tr className="tableTop">
             <th>First Name</th>
@@ -92,6 +107,7 @@ export default function RecordList() {
             <th>Email</th>
             <th>Age</th>
             <th>Current College</th>
+            <th>Major</th>
             <th>Modify Student</th>
           </tr>
         </thead>
