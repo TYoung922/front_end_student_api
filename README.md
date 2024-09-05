@@ -1,5 +1,7 @@
 here is the front end of my student api with React
 
+sfp2 is the branch with the second part of the project. This is primarily stylizing things.
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
